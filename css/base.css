@@ -6,21 +6,17 @@
 }
 
 
+html,
+body {
+    height: 100%;
+}
+
 body {
     display: flex;
     flex-direction: column;
     padding: 0;
     margin: 0;
     background: black;
-    width: 100%;
-    min-height: 100vh;
-}
-
-html,
-body {
-    min-width: 100%;
-    min-height: 100vh;
-    overflow-x: hidden;
 }
 
 .site-toolbar {
@@ -28,7 +24,6 @@ body {
     padding: 1rem;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     border-bottom: 1px white solid;
 }
 
@@ -125,45 +120,4 @@ figure {
 }
 
 
-@media only screen and (max-width: 500px) {
-    .avatar {
-        width: 90px;
-        height: 90px;
-    }
-
-    .dropdown-content {
-        top: 110px;
-        min-width: 90px;
-        width: 90px;
-    }
-
-    .dropdown-content a {
-        font-size: 15px;
-    }
-
-
-    .fa.fa-angle-right {
-        font-size: 75px;
-        padding-top: 25px;
-        padding-left: 50px;
-        color: white;
-    }
-
-    .item {
-        width: 150px;
-        min-width: 150px;
-    }
-
-
-    .item__caption-item_albom {
-        font-family: 'Open Sans';
-        font-size: 15px;
-        color: rgba(0, 0, 0, 0.807);
-    }
-
-    .item__caption-item_author {
-        font-family: 'Open Sans';
-        font-size: 10px;
-        color: rgba(33, 32, 32, 0.6);
-    }
-}
+@media only screen and (max-width: 500px) {}

@@ -2,8 +2,11 @@
     padding-left: 35%;
 }
 
+.account-layout {
+    align-items: unset;
+}
+
 .user-info {
-    min-width: calc(100% - 10px * 2);
     font-size: 40px;
 }
 
@@ -16,12 +19,10 @@
 }
 
 .user-info .user-info__name {
-    margin-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: start;
-    min-width: calc(100% - 10px * 2);
-    min-height: 20vh;
+    margin-bottom: 1.5rem;
 }
 
 .user-info .user-info__email {
@@ -35,7 +36,6 @@
 }
 
 .change_email {
-    min-width: 100%;
     margin-left: 50%;
 }
 
@@ -63,7 +63,6 @@
 
     .change_email {
         width: 30px;
-        min-width: 30px;
     }
 
     .key {
