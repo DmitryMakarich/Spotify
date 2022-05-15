@@ -9,7 +9,7 @@
     <link href="./css/base.css" rel="stylesheet">
 </head>
 <body>
-    <header class="site-toolbar">
+    <header id="home-header" class="site-toolbar">
         <h1>Spotify</h1>
         <div class="dropdown">
             <img class="dropdown__avatar" src="./img/avatar.jpg"></img>
@@ -19,7 +19,8 @@
             </div>
         </div>
     </header>
-    <main class="home-layout">
+    <div id="loader" class="lds-dual-ring"></div>
+    <main id="home-main" class="home-layout">
         <h2>Popular Albums</h2>
         <section class="row-wrapper">
             <figure class="item">
@@ -101,7 +102,7 @@
             </figure>
         </section>
     </main>
-    <footer class="footer-dark">
+    <footer id="home-footer" class="footer-dark">
         <nav class="navigation-links">
             <a class="navigation-links__icon" href="./home.html">
                 <svg version="1.1" fill="gray" width="30px" height="30px" viewBox="0 15 495.398 495.398">
@@ -147,5 +148,6 @@
             </a>
         </nav>
     </footer>
+    <script type="module" src="../scripts/home.js"></script>
 </body>
 </html>

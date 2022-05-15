@@ -1,9 +1,7 @@
 import { login } from "../API/spotifyAuth.js";
 
-const form = document.getElementById("login-form");
+const btn = document.getElementById("login-btn");
 
-form.onsubmit = async (e) => {
-  e.preventDefault();
-
+btn.onclick = async (e) => {
   await login();
 };
