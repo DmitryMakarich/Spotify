@@ -93,12 +93,25 @@ main {
     flex-direction: column;
     align-items: center;
     margin: auto;
+    color: gray;
+}
+
+.navigation-links .navigation-links__icon:hover {
     color: white;
 }
 
-.navigation-links .navigation-links__icon .navigation-links__title {
-    color: white;
+.navigation-links .navigation-links__icon:hover svg:hover {
+    fill: white;
+    stroke: white;
+}
+
+.navigation-links .navigation-links__icon .navigation-links--title {
+    color: gray;
     font-size: 20px;
+}
+
+.navigation-links .navigation-links__icon .navigation-links--title:hover {
+    color: white;
 }
 
 h1 {
