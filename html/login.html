@@ -9,12 +9,18 @@
     <link href="../css/base.css" rel="stylesheet" />
   </head>
   <body>
-    <main class="login_page">
-        <h1>Log in with Spotify</h1>
-        <img src="../img/spotify.png">
-        <button id="login-btn" class="login-btn">Login</button>
+    <main>
+      <form class="login-form" action="../index.html">
+        <h1>Welcome to Spotify</h1>
+        <label for="name">Email</label>
+        <input id="name" type="email" name="name" />
+
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password" />
+
+        <input id="submit-btn" type="submit" value="Login" />
       </form>
+      <a class="registration-link" href="../html/register.html">Register?</a>
     </main>
-    <script type="module" src="../scripts/authorization.js"></script>
   </body>
 </html>
