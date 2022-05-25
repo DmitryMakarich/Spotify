@@ -16,6 +16,7 @@ logoutBtn.onclick = (e) => {
 
 document.addEventListener("DOMContentLoaded", async () => {
   var paramsString = document.location.search;
+  console.log(paramsString)
   var searchParams = new URLSearchParams(paramsString);
 
   const accessToken = window.localStorage.getItem("accessToken");
