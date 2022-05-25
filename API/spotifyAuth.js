@@ -1,6 +1,6 @@
 const client_id = "f0dab5f6825a4357bf322993dd2397dc";
 const redirect_uri = "https%3A%2F%2Fdaniil609.github.io%2Fspotify%2F";
-const unencoded_redirect_uri = "https://daniil609.github.io/spotify";
+const unencoded_redirect_uri = "https://daniil609.github.io/spotify/";
 const scopes = "playlist-read-private";
 
 
