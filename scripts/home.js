@@ -1,4 +1,4 @@
-import { spotifyAuthorization } from "../API/spotifyAuth.js";
+// import { spotifyAuthorization } from "../API/spotifyAuth.js";
 import { getAlbums, getPlaylist } from "../API/spotifyApi.js";
 import { getPauseSvg, getPlaySvg } from "../Utils/svg.js";
 
