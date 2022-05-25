@@ -1,4 +1,4 @@
-const client_id = "f0dab5f6825a4357bf322993dd2397dc";
+const client_id = "930bd795ba644df0b70e0e0f838bbdca";
 const redirect_uri = "https%3A%2F%2Fdaniil609.github.io%2Fspotify%2F";
 const unencoded_redirect_uri = "https://daniil609.github.io/spotify/";
 const scopes = "playlist-read-private";
@@ -19,7 +19,7 @@ export const spotifyAuthorization = async (code) => {
       grant_type: "authorization_code",
     }),
     headers: {
-      Authorization: "Basic " + btoa(client_id + ":" + "8ca86dd3c8b24a26a7df203a3506b089"),
+      Authorization: "Basic " + btoa(client_id + ":" + "b28cf19380e94552a0d30d88b434fd92"),
       "Content-Type": "application/x-www-form-urlencoded",
     },
   }).then((response) => response.json());
