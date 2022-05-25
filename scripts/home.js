@@ -128,7 +128,7 @@ function renderPlaylist(playlistData) {
     const image = document.createElement("img");
     image.classList.add("item__avatar");
 
-    image.src = playlistData.images[0].url;
+    image.src = playlist.track.album.images[0].url;
     const figure = document.createElement("div");
     figure.classList.add("item");
     figure.appendChild(image);
