@@ -16,6 +16,35 @@ select {
     font-size: 25px;
 }
 
+#no-sort-records {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem auto 1rem;
+}
+
+#no-sort-records h1 {
+    margin: 3.5rem;
+}
+
+.music-grid__item svg {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    top: 6%;
+    left: 29%;
+    z-index: 999;
+}
+
+.music-grid__item:hover svg {
+    visibility: visible;
+    cursor: pointer;
+}
+
+.music-grid__item svg.visible {
+    display: block;
+}
+
 .music-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -25,8 +54,10 @@ select {
 }
 
 .music-grid .music-grid__item {
+    position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .music-grid .music-grid__item .music-grid__item__avatar {

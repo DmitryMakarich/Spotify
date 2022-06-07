@@ -19,6 +19,12 @@ body {
     background: black;
 }
 
+#app {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
 .site-toolbar {
     display: flex;
     padding: 1rem;

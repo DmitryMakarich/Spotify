@@ -19,3 +19,11 @@
     background-color: lightgreen;
     cursor: pointer;
 }
+
+.site-toolbar {
+    display: none !important;
+}
+
+footer {
+    display: none;
+}

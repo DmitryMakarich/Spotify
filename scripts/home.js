@@ -1,4 +1,3 @@
-
 import { spotifyAuthorization } from "../API/spotifyAuth.js";
 import { getAlbums, getPlaylist } from "../API/spotifyApi.js";
 import { getPauseSvg, getPlaySvg } from "../Utils/svg.js";
@@ -7,17 +6,14 @@ const header = document.getElementById("home-header");
 const main = document.getElementById("home-main");
 const footer = document.getElementById("home-footer");
 const loader = document.getElementById("loader");
+const app = document.getElementById("app");
 const logoutBtn = document.getElementById("logout-link");
 let isPlaing = false;
 
-logoutBtn.onclick = (e) => {
-  window.localStorage.removeItem("accessToken");
-};
-
-document.addEventListener("DOMContentLoaded", async () => {
-  var paramsString = document.location.search;
-  console.log(paramsString)
-  var searchParams = new URLSearchParams(paramsString);
+async function init() {
+  const paramsString = document.location.search;
+  console.log(paramsString);
+  const searchParams = new URLSearchParams(paramsString);
 
   const accessToken = window.localStorage.getItem("accessToken");
 
@@ -38,10 +34,12 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     fetchData(data.access_token);
   }
-});
+}
+
+await init();
 
 async function fetchData(token) {
-  document.body.removeChild(loader);
+  app.removeChild(loader);
   header.style.display = "flex";
   main.style.display = "block";
   footer.style.display = "block";
@@ -167,3 +165,7 @@ function renderPlaylist(playlistData) {
     };
   });
 }
+
+logoutBtn.onclick = (e) => {
+  window.localStorage.removeItem("accessToken");
+};

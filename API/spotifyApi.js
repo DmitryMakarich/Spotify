@@ -31,3 +31,16 @@ export const searchTracks = async (token, search) => {
     return response.json();
   });
 };
+
+export const searchGenreTracks = async (token, search) => {
+  return fetch(
+    `https://api.spotify.com/v1/search?q=genre:${search}&type=track&include_external=audio&limit=10`,
+    {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    }
+  ).then((response) => {
+    return response.json();
+  });
+};
